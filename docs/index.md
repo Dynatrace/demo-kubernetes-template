@@ -20,6 +20,14 @@
 
 [Example](htttps://example.com){target=_blank}
 
+
+## Open Codespace Link
+
+### Launch Standard Version
+Use this link to start the demo, open a new window and create a new codespace.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dynatrace/demo-PLACEHOLDER){target="_blank"}
+
 TODO...
 
 <div class="grid cards" markdown>
