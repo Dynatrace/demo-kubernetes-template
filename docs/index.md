@@ -21,3 +21,7 @@
 [Example](htttps://example.com){target=_blank}
 
 TODO...
+
+<div class="grid cards" markdown>
+- [Click Here to Begin :octicons-arrow-right-24:](getting-started.md)
+</div>
