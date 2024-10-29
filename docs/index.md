@@ -6,14 +6,14 @@
 ## Say First Hello
 
 ```shell
---8<-- "snippets/e2e-demo.sh:shebang"
---8<-- "snippets/e2e-demo.sh:SayFirstHello"
+--8<-- "snippets/e2e-sample.sh:shebang"
+--8<-- "snippets/e2e-sample.sh:SayFirstHello"
 ```
 
 ## Say Second Hello (without Shebang)
 
 ```shell
---8<-- "snippets/e2e-demo.sh:SaySecondHello"
+--8<-- "snippets/e2e-sample.sh:SaySecondHello"
 ```
 
 ## Open link in new tab
