@@ -35,7 +35,6 @@ theme:
       name: Switch to system preference
 
 markdown_extensions:
-  - attr_list
   - toc:
       permalink: '#'
   - md_in_html
@@ -47,5 +46,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.snippets:
       base_path: ["docs"]
+  - attr_list
 plugins:
     - search
