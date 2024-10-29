@@ -10,10 +10,14 @@
 --8<-- "snippets/e2e-demo.sh:SayFirstHello"
 ```
 
-# Say Second Hello (without Shebang)
+## Say Second Hello (without Shebang)
 
 ```shell
 --8<-- "snippets/e2e-demo.sh:SaySecondHello"
 ```
+
+## Open link in new tab
+
+[Example](htttps://example.com){target=_blank}
 
 TODO...
