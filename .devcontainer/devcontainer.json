@@ -38,7 +38,8 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": ".devcontainer/post-create.sh",
+	// eg. ./init.sh or python installer.py
+	"postCreateCommand": "PLACEHOLDER",
 
 	// Add recommended secrets
 	"secrets": {
