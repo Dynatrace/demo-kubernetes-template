@@ -52,8 +52,6 @@ Don't forget to rebuild and push your docs: `mkdocs gh-deploy`
 
 There is a GitHub action which fires whenever a GitHub issue is `opened` and create a new task in Asana for a given workspace and project.
 
-If you don't need / want this, just delete the YAML file.
-
 To set this up, your new repo needs to have 3x GitHub Action Secrets created (settings > secrets and variables > Actions > New repository secret)
 
 - `ASANA_PAT` ([how to generate an Asana PAT](https://developers.asana.com/docs/personal-access-token))
