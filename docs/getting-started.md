@@ -1,5 +1,7 @@
 # Getting Started
 
+--8<-- "snippets/bizevent-getting-started.js"
+
 TODO
 
 <div class="grid cards" markdown>
