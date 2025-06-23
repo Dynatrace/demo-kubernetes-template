@@ -3,6 +3,8 @@
 {
 	"name": "PLACEHOLDER",
 	"dockerFile": "Dockerfile",
+	// alternatively, prebuild an image and uncomment the following line instead
+	//"image": "userA/example:latest",
 
 	// do not change these if you want Docker in Docker support
 	"runArgs": ["--init", "--privileged", "--network=host"],
