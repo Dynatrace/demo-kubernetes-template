@@ -9,7 +9,7 @@ Includes a documentation stack (mkdocs) in the `docs` folder.
 ## Installing docstack
 
 ```
-pip install -r requirements-docs.txt
+pip install -r docs/requirements.txt
 ```
 
 Start docs:
