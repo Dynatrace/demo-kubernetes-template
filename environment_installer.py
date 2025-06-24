@@ -21,6 +21,7 @@ DT_TENANT_APPS, DT_TENANT_LIVE = build_dt_urls(dt_env_id=DT_ENVIRONMENT_ID, dt_e
 # Required because user interaction needs DT_TENANT_LIVE during the tutorial
 # This ONLY creates the .env file. YOU are responsible for `source`ing it!!
 # So we tell user to source .env
+dotenv.set_key(dotenv_path=".env", key_to_set="DT_APPS_URL", value_to_set=DT_TENANT_APPS, export=True)
 dotenv.set_key(dotenv_path=".env", key_to_set="DT_URL", value_to_set=DT_TENANT_LIVE, export=True)
 
 if CODESPACE_NAME.startswith("dttest-"):
