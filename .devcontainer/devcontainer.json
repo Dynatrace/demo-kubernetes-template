@@ -51,6 +51,8 @@
 	"postCreateCommand": "pip install -r /workspaces/$RepositoryName/.devcontainer/requirements.txt --break-system-packages && python3 /workspaces/$RepositoryName/environment_installer.py",
 
 	// Add recommended secrets
+	// !! Currently no way to make these mandatory !!
+	// Make sure your startup scripts defend against empty values
 	"secrets": {
 	 	  "DT_ENVIRONMENT_ID": {
 	            "description": "eg. abc12345 from https://abc12345.live.dynatrace.com"
