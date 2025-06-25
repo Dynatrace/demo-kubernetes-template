@@ -1,5 +1,7 @@
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  dynatrace.sendBizEvent('page_load', {"page": "10. whats-next"});
+var CURRENT_PAGE = "10. whats-next";
+
+document.addEventListener('DOMContentLoaded', function() {  
+  dynatrace.sendBizEvent('page_load', {"page": CURRENT_PAGE});
 });
 </script>
