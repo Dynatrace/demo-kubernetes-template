@@ -24,6 +24,8 @@ DT_TENANT_APPS, DT_TENANT_LIVE = build_dt_urls(dt_env_id=DT_ENVIRONMENT_ID, dt_e
 dotenv.set_key(dotenv_path=".env", key_to_set="DT_APPS_URL", value_to_set=DT_TENANT_APPS, export=True)
 dotenv.set_key(dotenv_path=".env", key_to_set="DT_URL", value_to_set=DT_TENANT_LIVE, export=True)
 
+subprocess.run(["kind", "create", "cluster", "--config", ".devcontainer/kind-cluster.yml", "--wait", STANDARD_TIMEOUT])
+
 if CODESPACE_NAME.startswith("dttest-"):
     # Set default repository for gh CLI
     # Required for the e2e test harness
