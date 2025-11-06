@@ -2,7 +2,8 @@ import subprocess
 import os, threading
 from helpers import *
 
-# TODO: This is a semi "undocumented" token
+# TODO: Please read
+# This is a semi "undocumented" token
 # If you're running E2E tests, make sure to define a Dynatrace API token
 # with `apiTokens.write` permissions
 # This token will be used in helpers.py/create_dt_api_token to create other short-lived tokens
