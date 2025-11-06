@@ -34,7 +34,7 @@ def run_command_in_background(step):
         payload = payload = {
             "specversion": "1.0",
             "id": "1",
-            "source": f"gi/{REPOSITORY_NAME}",
+            "source": f"github.com/{GITHUB_REPOSITORY}",
             "type": "e2e.test.failed",
             "data": {
                 "step": step,
@@ -81,7 +81,7 @@ for step in steps:
             payload = payload = {
                 "specversion": "1.0",
                 "id": "1",
-                "source": f"github.com/agardnerit/{REPOSITORY_NAME}",
+                "source": f"github.com/{GITHUB_REPOSITORY}",
                 "type": "e2e.test.failed",
                 "data": {
                     "step": step,
@@ -102,7 +102,7 @@ for step in steps:
             payload = payload = {
                 "specversion": "1.0",
                 "id": "1",
-                "source": f"github.com/agardnerit/{REPOSITORY_NAME}",
+                "source": f"github.com/{GITHUB_REPOSITORY}",
                 "type": "e2e.test.failed",
                 "data": {
                     "step": step,
@@ -133,7 +133,7 @@ for step in steps:
                 payload = payload = {
                     "specversion": "1.0",
                     "id": "1",
-                    "source": f"github.com/agardnerit/{REPOSITORY_NAME}",
+                    "source": f"github.com/{GITHUB_REPOSITORY}",
                     "type": "e2e.test.failed",
                     "data": {
                         "step": step,
