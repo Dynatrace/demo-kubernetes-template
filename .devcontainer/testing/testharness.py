@@ -34,7 +34,7 @@ def run_command_in_background(step):
         payload = payload = {
             "specversion": "1.0",
             "id": "1",
-            "source": f"github.com/agardnerit/{REPOSITORY_NAME}",
+            "source": f"gi/{REPOSITORY_NAME}",
             "type": "e2e.test.failed",
             "data": {
                 "step": step,
