@@ -4,7 +4,7 @@
 
 Use this template to bootstrap your Kubernetes-based hands on cloud environment.
 
-Includes a documentation stack (mkdocs) in the `docs` folder.
+Includes a documentation stack (mkdocs) in the `docs` folder and full end-to-end testing suite.
 
 ## Installing docstack
 
