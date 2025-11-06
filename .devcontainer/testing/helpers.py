@@ -20,7 +20,7 @@ TESTING_DYNATRACE_USER_PASSWORD = os.environ.get("TESTING_DYNATRACE_USER_PASSWOR
 REPOSITORY_NAME = os.environ.get("RepositoryName", "")
 DEV_MODE = os.environ.get("DEV_MODE", "FALSE").upper() # This is a string. NOT a bool.
 CURRENT_USER = getpass.getuser()
-GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY, "")
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
 
 TESTING_BASE_DIR = ""
 if DEV_MODE == "TRUE":
