@@ -94,6 +94,26 @@ for step in steps:
         else:
             logger.info(output)
     else:
+        # first, check whether snippet even exists
+        # if it does, this will return with a returncode=0
+        # it the snippet doesn't exity, returncode=1
+        output = ["runme", "print", step]
+        if output.returncode != 0:
+            payload = payload = {
+                "specversion": "1.0",
+                "id": "1",
+                "source": f"github.com/agardnerit/{REPOSITORY_NAME}",
+                "type": "e2e.test.failed",
+                "data": {
+                    "step": step,
+                    "output.stdout": output.stdout,
+                    "output.stderr": output.stderr,
+                    "message": "Command not found. Please check steps.txt to ensure your command exists and is named correctly."
+                }
+            }
+            send_business_event(dt_tenant_live=DT_TENANT_LIVE, dt_rw_api_token=DT_API_TOKEN_TESTING, content_json=payload)
+            exit("Command not found. Please check steps.txt to ensure your command exists and is named correctly.")
+
         command = ["runme", "run", step]
 
         # If task should be run in background
