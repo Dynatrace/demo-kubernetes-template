@@ -25,9 +25,16 @@ steps = get_steps(f"/workspaces/{REPOSITORY_NAME}/.devcontainer/testing/steps.tx
 INSTALL_PLAYWRIGHT_BROWSERS = False
 
 def run_command_in_background(step):
+    # first, check whether snippet even exists
+    # if it does, this will return with a returncode=0
+    # it the snippet doesn't exity, returncode=1
+    output = ["runme", "print", step]
+    if output.returncode != 0:
+        exit("Command not found. Please check steps.txt to ensure your command exists and is named correctly.")
     command = ["runme", "run", step]
     with open("nohup.out", "w") as f:
         subprocess.Popen(["nohup"] + command, stdout=f, stderr=f)
+
 # Installing Browsers for Playwright is a time consuming task
 # So only install if we need to
 # That means if running in non-dev mode (dev mode assumes the person already has everything installed)
@@ -101,6 +108,5 @@ for step in steps:
                     }
                 }
                 send_business_event(dt_tenant_live=DT_TENANT_LIVE, dt_rw_api_token=DT_API_TOKEN_TESTING, content_json=payload)
-                #create_github_issue(output, step_name=step)
             else:
                 logger.info(output)
