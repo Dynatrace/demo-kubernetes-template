@@ -46,9 +46,10 @@ Do this by [including a snippet on each markdown page](https://github.com/Dynatr
 
 Don't forget to rebuild and push your docs: `mkdocs gh-deploy`
 
-## End to End Testing Mode
+## 3. End to End Testing Mode
 
-This repo template comes with a full test suite. First ensure you've named your YAML snippets in the markdown docs, like [this](https://github.com/Dynatrace/demo-kubernetes-template/blob/main/docs/getting-started.md?plain=1#L8-L10)
+This repo template comes with a full test suite. First ensure you've named your YAML snippets in the markdown docs, like [this](https://github.com/Dynatrace/demo-kubernetes-template/blob/main/docs/getting-started.md?plain=1#L8-L10).
+
 Use those names to populate [steps.txt](https://github.com/Dynatrace/demo-kubernetes-template/blob/main/.devcontainer/testing/steps.txt) to fill out your e2e test. Be sure to update [test_dynatrace_ui.py](https://github.com/Dynatrace/demo-kubernetes-template/blob/main/.devcontainer/testing/test_dynatrace_ui.py) and add it as a step (after you send data to Dynatrace, you need to test that the data makes it into the UI and is visualised correctly. In this case, [steps.txt](https://github.com/Dynatrace/demo-kubernetes-template/blob/main/.devcontainer/testing/steps.txt) may look like this:
 
 ```
